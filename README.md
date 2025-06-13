@@ -76,16 +76,17 @@ like it say on help of cli tools
 
 -  first u need to make a workspace use `app -m workspace1` if a workspace with that name exist it will just read its items and doesn't make a new one
 
-![Screenshot_2025-06-12-14-22-21_2560x1080](/home/emad/Pictures/Screenshots/Screenshot_2025-06-12-14-22-21_2560x1080.png)
+![Screenshot_2025-06-12-14-22-21_2560x1080](/run/media/emad/0a6fd991-251a-48db-9fc4-baf546d2764b/codes/personal/spaces/i3_my_space/images/Screenshot_2025-06-12-14-22-21_2560x1080.png)
 
 - u can also list all workspaces u created using  `app -rs`
 
-![Screenshot_2025-06-12-14-28-12_2560x1080](/home/emad/Pictures/Screenshots/Screenshot_2025-06-12-14-28-12_2560x1080.png)
+![Screenshot_2025-06-12-14-28-12_2560x1080](/run/media/emad/0a6fd991-251a-48db-9fc4-baf546d2764b/codes/personal/spaces/i3_my_space/images/Screenshot_2025-06-12-14-28-12_2560x1080.png)
 
 - than u need to create some apps on your newly created workspace use this 
 
   `app -ai [workspace_name] [app_name] [desktop_session]`
-  ![Screenshot_2025-06-12-14-30-42_2560x1080](/home/emad/Pictures/Screenshots/Screenshot_2025-06-12-14-30-42_2560x1080.png)
+
+![Screenshot_2025-06-12-14-30-42_2560x1080](/run/media/emad/0a6fd991-251a-48db-9fc4-baf546d2764b/codes/personal/spaces/i3_my_space/images/Screenshot_2025-06-12-14-30-42_2560x1080.png)
 
 - this tools currently only support i3wm use this command to run that workspace `app -ri3`
 
@@ -93,7 +94,9 @@ like it say on help of cli tools
 
 - also for getting app name u need to use `xprop` than u click on your app to get its info like this 
 
-![Screenshot_2025-06-12-14-17-24_2560x1080](/home/emad/Pictures/Screenshots/Screenshot_2025-06-12-14-17-24_2560x1080.png)
+![Screenshot_2025-06-12-14-17-24_2560x1080](/run/media/emad/0a6fd991-251a-48db-9fc4-baf546d2764b/codes/personal/spaces/i3_my_space/images/Screenshot_2025-06-12-14-17-24_2560x1080.png)
+
+
 
 name of app is writen in front of **`WM_NAME`**
 
