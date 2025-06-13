@@ -1,13 +1,16 @@
+
 import sqlite3
 import argparse
+import subprocess
 
+import time  # Make sure to import time if you're using it
 from rich.console import Console
 from rich.table import Table
 import random
 
 import os
 
-class Main:
+class Spaces:
 
     def __init__(self):
         # self.name = name
@@ -205,19 +208,19 @@ class Main:
         ################################################################## VMS
 
 
-    def run_i3(app_list):
+    def run_i3(self , app_list):
         for app in app_list:
             # Switch to the desired workspace
             subprocess.run(f'i3-msg "workspace {app[3]}"', shell=True)
             
             # Optional: Add a small delay to ensure the workspace switch is complete
-            time.sleep(0.1)  # Adjust the delay as needed
+            time.sleep(3)  # Adjust the delay as needed
 
             # Execute the application
             subprocess.Popen(app[2], shell=True)
 
             # Optional: Add a delay to allow the application to start
-            time.sleep(0.5)  # Adjust the delay as needed
+            time.sleep(3)  # Adjust the delay as needed
 
         ################################################################### app info
     def app_info(self):
@@ -225,7 +228,7 @@ class Main:
 
         ################################################################### main
 
-    def main(self, args):
+    def spaces(self, args):
 
         # Expand the path to the user's home directory
         config_dir = os.path.expanduser('~/.config/spaces')
@@ -280,8 +283,8 @@ class Main:
 
 if __name__ == "__main__":
     # user_name = input("Enter your name: ")
-    app = Main()
+    app = Spaces()
     args = app.make_ARGS()
 
     # Call the main method
-    app.main(args)
+    app.spaces(args)
